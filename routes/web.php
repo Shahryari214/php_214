@@ -20,8 +20,4 @@ Auth::routes();
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
 
-Route::get('admin', 'adminController@index');
-
-Route::post('/admin', [
-	'as'=>'admin',
-    'uses'=>'adminController@login']);
+Route::get('admin', 'AdminController@index');
