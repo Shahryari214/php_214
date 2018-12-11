@@ -106,7 +106,10 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('ذخیره') }}
+                                    {{ __('بروزرسانی') }}
+                                </button>
+                                <button type="text" >
+                                    <a href="{{route('products.index')}}">بازگشت</a>
                                 </button>
                             </div>
                         </div>

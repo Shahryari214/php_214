@@ -21,7 +21,7 @@ Auth::routes();
 Route::get('/profile',[
 	'uses' => 'ProfileController@index',
 	'as'   => 'profile'
-]);
+])->middleware('profile');
 
 
 Route::get('/admin',[
