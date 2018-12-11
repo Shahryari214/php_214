@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class product extends Model
 {
+	protected $guarded = ['id'];
+    //protected $fillable = ['title'];
+
     public function subcategory() {
         return $this->belongsTo(subcategory::class);
     }

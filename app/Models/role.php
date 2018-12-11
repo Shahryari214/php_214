@@ -9,4 +9,6 @@ class role extends Model
      public function users() {
         return $this->hasMany(users::class);
     }
+
+    
 }

@@ -24,6 +24,7 @@ class CreateRolesTable extends Migration
             $table->boolean('edituser');
             $table->boolean('updateuser');
             $table->boolean('addproduct');
+            $table->boolean('showproduct');
             $table->boolean('delproduct');
             $table->boolean('editproduct');
             $table->boolean('updateproduct');
@@ -31,14 +32,17 @@ class CreateRolesTable extends Migration
             $table->boolean('delorder');
             $table->boolean('editorder');
             $table->boolean('updateorder');
+            $table->boolean('showorder');
             $table->boolean('adddiscount');
             $table->boolean('deldiscount');
             $table->boolean('editdiscount');
             $table->boolean('updatediscount');
+            $table->boolean('showdiscount');
             $table->boolean('addCategory');
             $table->boolean('delCategory');
             $table->boolean('editCategory');
             $table->boolean('updateCategory');
+            $table->boolean('showCategory');
             $table->boolean('active');
             $table->text('description'); 
             $table->timestamps();

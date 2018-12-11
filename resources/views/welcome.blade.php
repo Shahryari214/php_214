@@ -14,7 +14,7 @@
             html, body {
                 background-color: #fff;
                 color: #636b6f;
-                font-family: 'Nunito', sans-serif;
+                font-family: 'Samim', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
@@ -69,7 +69,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/profile') }}">profile</a>
+                        <a href="{{ route('admin') }}">profile</a>
                     @else
                         <a href="{{ route('login') }}">ورود</a>
 
